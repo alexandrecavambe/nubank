@@ -172,3 +172,200 @@ header{
         }
     }
 }
+
+.card-section{
+    background-color: var(--dark);
+    padding: 180px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+
+    .credit-card{
+        width: 360px;
+        height: 220px;
+        background: linear-gradient(135deg, var(--purple), var(--purple-dark));
+        border-radius: 20px;
+        padding: 30px;
+        box-shadow: 0 20px 40px rgba(138, 10, 209, 0.3);
+
+
+        .card-chip{
+            background: linear-gradient(135deg, #FFD700, #FFA500);
+            height: 35PX;
+            width: 45px;
+            border-radius: 8px;
+            margin-bottom: 38px;
+        }
+
+        .card-number{
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 18px;
+            letter-spacing: 3px;
+            margin-bottom: 30px;
+        }
+
+        .card-info{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .card-info span{
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .card-info strong{
+            font-size: 24px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+    }
+
+    .card-text{
+        max-width: 480px;
+
+        h2{
+            color: var(--white);
+            font-weight: 800;
+            font-size: 2.5em;
+            margin-bottom: 16px;
+        }
+
+        p{
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.7;
+            margin-bottom: 24px;
+        }
+
+        ul{
+            list-style: none;
+            margin-bottom: 24px;
+
+            li{
+                color: rgba(255, 255, 255, 0.7);
+                font-size: 18px;
+                padding: 6px 0;
+            }
+
+            li::before{
+                content: '✔';
+                color: var(--purple);
+                margin-right: 10px;
+            }
+        }
+
+        .btn-roxo{
+            background-color: var(--purple);
+            display: inline-block;
+            color: var(--white);
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        
+    }
+}
+
+.cta-section{
+    padding: 180px 40px;
+    text-align: center;
+    background: linear-gradient(135deg, var(--purple), var(--purple-dark));
+
+    h2{
+        color: var(--white);
+        font-size: 36px;
+        font-weight: 800;
+        margin-bottom: 24px;
+    }
+
+    p{
+        font-size: 18px;
+        color: rgba(255, 255, 255, 0.7);
+        margin-bottom: 32px;
+    }
+
+    .btn-cta{
+        display: inline-block;
+        background-color: var(--white);
+        color: var(--purple);
+        text-decoration: none;
+        padding: 16px 40px; 
+        border-radius: 40px;
+        font-size: 16px;
+        font-weight: 700;
+        transition: 0.5s ease;
+        cursor: pointer;
+
+        &:hover{
+            transform: translateY(-3px);
+            box-shadow: 0 8px 15px rgba(255, 255, 255, 0.3);
+        }
+    }
+}
+
+footer{
+    background-color: var(--dark);
+    padding: 60px 40px 30px;
+
+    .footer-top{
+        max-width: 1200px;
+        margin: 0 auto 40px;
+        display: flex;
+        gap: 60px;
+
+        .footer-first-child{
+            flex: 2;
+
+            p{
+                color: rgba(255, 255, 255, 0.5);
+                font-size: 14px;
+                margin-bottom: 20px;
+            }
+        }
+
+        .footer-links{
+            flex: 1;
+        }
+
+        .footer-logo{
+            height: 22px;
+            margin-bottom: 28px;
+        }
+
+        h4{
+            color: var(--white);
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 16px;
+        }
+
+        a{
+            display: block;
+            color: rgba(255, 255, 255, 0.5);
+            text-decoration: none;
+            font-size: 14px;
+            margin-bottom: 10px;
+
+            &:hover{
+                color: var(--purple);
+            }
+        }
+
+        
+    }
+
+    .footer-bottom{
+        text-align: center;
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 12px;
+    }
+}
